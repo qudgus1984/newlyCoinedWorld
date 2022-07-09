@@ -43,6 +43,9 @@ class ViewController: UIViewController {
         appearTextLabel.text = "꾸민듯 안꾸민듯의 줄임말"
     }
     
+    @IBAction func searchButton(_ sender: UIButton) {
+        appearTextLabel.text = searchTextField.text
+    }
     
     
     
