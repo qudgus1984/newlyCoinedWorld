@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         
     }
 
+    // 연관 버튼 신조어 해석
     @IBAction func newlyButton1Clicked(_ sender: UIButton) {
         appearTextLabel.text = "구독자 유뮤를 차별한다는 뜻"
     }
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchButton(_ sender: UIButton) {
+        // 신조어 추가
         if searchTextField.text == "배사" {
             appearTextLabel.text = "배경사진의 줄임 말"
         } else if searchTextField.text == "디엠" {
@@ -55,18 +57,28 @@ class ViewController: UIViewController {
         } else if searchTextField.text == "구취" {
             appearTextLabel.text = "구독 취소의 줄임 말"
         }
+        
+        // 검색 버튼 눌렀을 때 키보드 내리기
+        view.endEditing(true)
+
     }
     
     
-    
+    // 뷰 클릭시 키보드 내리기
     @IBAction func tapGestureView(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
+    // 밑의 연관 신조어 버튼 UI 구성
     func newlyButton(newlyButtonName: UIButton) {
         newlyButtonName.layer.cornerRadius = 15
         newlyButtonName.layer.borderWidth = 2
         newlyButtonName.layer.borderColor = UIColor.black.cgColor
         
     }
+    // 텍스트필드 키보드 내리기
+    @IBAction func searchTextFieldClicked(_ sender: UITextField) {
+    }
+    
 }
 
