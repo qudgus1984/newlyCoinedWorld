@@ -30,11 +30,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func newlyButton1Clicked(_ sender: UIButton) {
-        appearTextLabel.text = "윰차해석"
+        appearTextLabel.text = "구독자 유뮤를 차별한다는 뜻"
     }
     
     @IBAction func newlyButton2Clicked(_ sender: UIButton) {
-        appearTextLabel.text = "실매해석"
+        appearTextLabel.text = "실시간 매니저를 줄인 말"
     }
     @IBAction func newlyButton3Clicked(_ sender: UIButton) {
         appearTextLabel.text = "만나서 반가워 잘 부탁해! 의 줄임말"
@@ -44,11 +44,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchButton(_ sender: UIButton) {
-        appearTextLabel.text = searchTextField.text
+        if searchTextField.text == "배사" {
+            appearTextLabel.text = "배경사진의 줄임 말"
+        } else if searchTextField.text == "디엠" {
+            appearTextLabel.text = "다이렉트 메세지의 줄임 말"
+        } else if searchTextField.text == "떡상" {
+            appearTextLabel.text = "크게 상승한다의 줄임 말"
+        } else if searchTextField.text == "떡락" {
+            appearTextLabel.text = "크게 하락한다의 줄임 말"
+        } else if searchTextField.text == "구취" {
+            appearTextLabel.text = "구독 취소의 줄임 말"
+        }
     }
     
     
     
+    @IBAction func tapGestureView(_ sender: UITapGestureRecognizer) {
+    }
     
     func newlyButton(newlyButtonName: UIButton) {
         newlyButtonName.layer.cornerRadius = 15
