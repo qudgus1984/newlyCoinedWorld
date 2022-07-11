@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         newlyButton(newlyButtonName: newlyButton3)
         newlyButton(newlyButtonName: newlyButton4)
         
+        
 
         searchTextField.layer.borderColor = UIColor.black.cgColor
         searchTextField.layer.borderWidth = 2

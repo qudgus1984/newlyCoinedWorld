@@ -46,7 +46,7 @@
                                     <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCv-eC-qan"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrH-UT-aCl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrH-UT-aCl">
                                 <rect key="frame" x="20" y="113" width="49" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="윰차">
@@ -56,7 +56,7 @@
                                     <action selector="newlyButton1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DeX-zu-GXu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkm-Pa-s2L">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkm-Pa-s2L">
                                 <rect key="frame" x="74" y="113" width="49" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="실매">
@@ -66,9 +66,12 @@
                                     <action selector="newlyButton2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coe-KD-V06"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuy-HX-YwO">
-                                <rect key="frame" x="206" y="113" width="61" height="31"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuy-HX-YwO">
+                                <rect key="frame" x="206" y="113" width="60.5" height="31"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="꾸안꾸">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <buttonConfiguration key="configuration" style="plain" title="꾸안꾸">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -76,7 +79,7 @@
                                     <action selector="newlyButton4Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aoq-qf-M0R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sad-ji-Np3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sad-ji-Np3">
                                 <rect key="frame" x="128" y="113" width="73" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="만반잘부">
@@ -113,6 +116,7 @@
                             <constraint firstItem="iai-6a-hhc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m9y-nt-WRa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MJf-6S-gZ9" secondAttribute="trailing" constant="20" id="mDF-SN-eY3"/>
                             <constraint firstItem="UrH-UT-aCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="omH-mV-Gzj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="xuy-HX-YwO" secondAttribute="trailing" constant="147.5" id="piK-PB-epW"/>
                             <constraint firstItem="Bkm-Pa-s2L" firstAttribute="top" secondItem="52R-iK-M5m" secondAttribute="bottom" constant="15" id="qxS-m5-c0W"/>
                             <constraint firstItem="UrH-UT-aCl" firstAttribute="top" secondItem="52R-iK-M5m" secondAttribute="bottom" constant="15" id="wmb-hr-D2u"/>
                             <constraint firstItem="Bkm-Pa-s2L" firstAttribute="leading" secondItem="UrH-UT-aCl" secondAttribute="trailing" constant="5" id="wsT-ti-fV1"/>
