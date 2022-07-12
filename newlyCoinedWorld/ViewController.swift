@@ -7,6 +7,43 @@
 
 import UIKit
 
+enum newlyCoinedWorld: String {
+    case 윰차
+    case 실매
+    case 만반잘부
+    case 꾸안꾸
+    case 배사
+    case 디엠
+    case 구취
+    case 떡상
+    case 떡락
+    
+    func newlyWorldExplain() -> String {
+        switch self {
+
+        case .윰차:
+            return "구독자 유뮤를 차별한다는 뜻"
+        case .실매:
+            return "실시간 매니저를 줄인 말"
+        case .만반잘부:
+            return "만나서 반가워 잘 부탁해! 의 줄임말"
+        case .꾸안꾸:
+            return "꾸민듯 안꾸민듯의 줄임말"
+        case .배사:
+            return "배경사진의 줄임 말"
+        case .디엠:
+            return "다이렉트 메세지의 줄임 말"
+        case .구취:
+            return "구독 취소의 줄임 말"
+        case .떡상:
+            return "크게 상승한다의 줄임 말"
+        case .떡락:
+            return "크게 하락한다의 줄임 말"
+        }
+    }
+}
+
+
 class ViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var newlyButton1: UIButton!
@@ -47,17 +84,18 @@ class ViewController: UIViewController {
     
     @IBAction func searchButton(_ sender: UIButton) {
         // 신조어 추가
-        if searchTextField.text == "배사" {
-            appearTextLabel.text = "배경사진의 줄임 말"
-        } else if searchTextField.text == "디엠" {
-            appearTextLabel.text = "다이렉트 메세지의 줄임 말"
-        } else if searchTextField.text == "떡상" {
-            appearTextLabel.text = "크게 상승한다의 줄임 말"
-        } else if searchTextField.text == "떡락" {
-            appearTextLabel.text = "크게 하락한다의 줄임 말"
-        } else if searchTextField.text == "구취" {
-            appearTextLabel.text = "구독 취소의 줄임 말"
-        }
+        if case .newlyCoinedWorld(
+//        if searchTextField.text == "배사" {
+//            appearTextLabel.text = "배경사진의 줄임 말"
+//        } else if searchTextField.text == "디엠" {
+//            appearTextLabel.text = "다이렉트 메세지의 줄임 말"
+//        } else if searchTextField.text == "떡상" {
+//            appearTextLabel.text = "크게 상승한다의 줄임 말"
+//        } else if searchTextField.text == "떡락" {
+//            appearTextLabel.text = "크게 하락한다의 줄임 말"
+//        } else if searchTextField.text == "구취" {
+//            appearTextLabel.text = "구독 취소의 줄임 말"
+//        }
         
         // 검색 버튼 눌렀을 때 키보드 내리기
         view.endEditing(true)
