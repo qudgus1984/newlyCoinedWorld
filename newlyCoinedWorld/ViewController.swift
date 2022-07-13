@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum newlyCoinedWorld: String {
+enum NewlyCoinedWorld: String {
     case 윰차
     case 실매
     case 만반잘부
@@ -18,31 +18,11 @@ enum newlyCoinedWorld: String {
     case 떡상
     case 떡락
     
-    func newlyWorldExplain() -> String {
-        switch self {
-
-        case .윰차:
-            return "구독자 유뮤를 차별한다는 뜻"
-        case .실매:
-            return "실시간 매니저를 줄인 말"
-        case .만반잘부:
-            return "만나서 반가워 잘 부탁해! 의 줄임말"
-        case .꾸안꾸:
-            return "꾸민듯 안꾸민듯의 줄임말"
-        case .배사:
-            return "배경사진의 줄임 말"
-        case .디엠:
-            return "다이렉트 메세지의 줄임 말"
-        case .구취:
-            return "구독 취소의 줄임 말"
-        case .떡상:
-            return "크게 상승한다의 줄임 말"
-        case .떡락:
-            return "크게 하락한다의 줄임 말"
-        }
-    }
+    
 }
 
+
+// 이걸 어떻게 적용한담...
 
 class ViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
@@ -53,6 +33,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var appearTextLabel: UILabel!
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         newlyButton(newlyButtonName: newlyButton1)
@@ -61,12 +43,12 @@ class ViewController: UIViewController {
         newlyButton(newlyButtonName: newlyButton4)
         
         
-
+        
         searchTextField.layer.borderColor = UIColor.black.cgColor
         searchTextField.layer.borderWidth = 2
         
     }
-
+    
     // 연관 버튼 신조어 해석
     @IBAction func newlyButton1Clicked(_ sender: UIButton) {
         appearTextLabel.text = "구독자 유뮤를 차별한다는 뜻"
@@ -84,22 +66,36 @@ class ViewController: UIViewController {
     
     @IBAction func searchButton(_ sender: UIButton) {
         // 신조어 추가
-        if case .newlyCoinedWorld(
-//        if searchTextField.text == "배사" {
-//            appearTextLabel.text = "배경사진의 줄임 말"
-//        } else if searchTextField.text == "디엠" {
-//            appearTextLabel.text = "다이렉트 메세지의 줄임 말"
-//        } else if searchTextField.text == "떡상" {
-//            appearTextLabel.text = "크게 상승한다의 줄임 말"
-//        } else if searchTextField.text == "떡락" {
-//            appearTextLabel.text = "크게 하락한다의 줄임 말"
-//        } else if searchTextField.text == "구취" {
-//            appearTextLabel.text = "구독 취소의 줄임 말"
-//        }
         
+        let newRawValue = NewlyCoinedWorld(rawValue: searchTextField.text!)
+        switch newRawValue {
+            
+        case .윰차:
+            appearTextLabel.text = "구독자 유뮤를 차별한다는 뜻"
+        case .실매:
+            appearTextLabel.text = "실시간 매니저를 줄인 말"
+        case .만반잘부:
+            appearTextLabel.text = "만나서 반가워 잘 부탁해! 의 줄임말"
+        case .꾸안꾸:
+            appearTextLabel.text = "꾸민듯 안꾸민듯의 줄임말"
+        case .배사:
+            appearTextLabel.text = "배경사진의 줄임 말"
+        case .디엠:
+            appearTextLabel.text = "다이렉트 메세지의 줄임 말"
+        case .구취:
+            appearTextLabel.text = "구독 취소의 줄임 말"
+        case .떡상:
+            appearTextLabel.text = "크게 상승한다의 줄임 말"
+        case .떡락:
+            appearTextLabel.text = "크게 하락한다의 줄임 말"
+        case .none:
+            appearTextLabel.text = "값 없음"
+        }
+        // 왜 다른 함수 호출이 안될까... 왜... -> 나는 할수있다아아!!!
+
         // 검색 버튼 눌렀을 때 키보드 내리기
         view.endEditing(true)
-
+        
     }
     
     
@@ -118,6 +114,33 @@ class ViewController: UIViewController {
     // 텍스트필드 키보드 내리기
     @IBAction func searchTextFieldClicked(_ sender: UITextField) {
     }
+    @IBAction func tapReturnKey(_ sender: UITextField) {
+        let newRawValue = NewlyCoinedWorld(rawValue: sender.text!)
+        switch newRawValue {
+            
+        case .윰차:
+            appearTextLabel.text = "구독자 유뮤를 차별한다는 뜻"
+        case .실매:
+            appearTextLabel.text = "실시간 매니저를 줄인 말"
+        case .만반잘부:
+            appearTextLabel.text = "만나서 반가워 잘 부탁해! 의 줄임말"
+        case .꾸안꾸:
+            appearTextLabel.text = "꾸민듯 안꾸민듯의 줄임말"
+        case .배사:
+            appearTextLabel.text = "배경사진의 줄임 말"
+        case .디엠:
+            appearTextLabel.text = "다이렉트 메세지의 줄임 말"
+        case .구취:
+            appearTextLabel.text = "구독 취소의 줄임 말"
+        case .떡상:
+            appearTextLabel.text = "크게 상승한다의 줄임 말"
+        case .떡락:
+            appearTextLabel.text = "크게 하락한다의 줄임 말"
+        case .none:
+            appearTextLabel.text = "값 없음"
+        }
+    }
     
 }
+
 

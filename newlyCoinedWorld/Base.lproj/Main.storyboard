@@ -30,6 +30,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="searchTextFieldClicked:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="JNn-Xo-JoD"/>
+                                    <action selector="tapReturnKey:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="BoO-DQ-MPD"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJf-6S-gZ9">
