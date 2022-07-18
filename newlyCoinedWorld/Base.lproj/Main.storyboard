@@ -54,7 +54,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="newlyButton1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DeX-zu-GXu"/>
+                                    <action selector="newButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1BV-J4-oHe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkm-Pa-s2L">
@@ -64,7 +64,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="newlyButton2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coe-KD-V06"/>
+                                    <action selector="newButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="387-pj-qj8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuy-HX-YwO">
@@ -77,7 +77,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="newlyButton4Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aoq-qf-M0R"/>
+                                    <action selector="newButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZv-9G-NOH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sad-ji-Np3">
@@ -87,7 +87,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="newlyButton3Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mik-Zx-t6b"/>
+                                    <action selector="newButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNn-06-d9b"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연애를 시작하기 전 썸 단계!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iai-6a-hhc">
@@ -126,11 +126,11 @@
                     </view>
                     <connections>
                         <outlet property="appearTextLabel" destination="iai-6a-hhc" id="b6Q-s3-KNo"/>
-                        <outlet property="newlyButton1" destination="UrH-UT-aCl" id="MjI-Ne-rcP"/>
-                        <outlet property="newlyButton2" destination="Bkm-Pa-s2L" id="CGM-au-kP1"/>
+                        <outlet property="newlyButton1" destination="UrH-UT-aCl" id="gCK-w6-x34"/>
+                        <outlet property="newlyButton2" destination="Bkm-Pa-s2L" id="s45-o4-sf4"/>
                         <outlet property="newlyButton3" destination="sad-ji-Np3" id="yEu-0v-s8G"/>
                         <outlet property="newlyButton4" destination="xuy-HX-YwO" id="1dS-H6-WWa"/>
-                        <outlet property="searchTextField" destination="52R-iK-M5m" id="XWf-vW-xJp"/>
+                        <outlet property="searchTextField" destination="52R-iK-M5m" id="nsi-7j-dul"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

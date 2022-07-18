@@ -21,9 +21,6 @@ enum NewlyCoinedWorld: String {
     
 }
 
-
-// 이걸 어떻게 적용한담...
-
 class ViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var newlyButton1: UIButton!
@@ -50,20 +47,7 @@ class ViewController: UIViewController {
     }
     
     
-    // 연관 버튼 신조어 해석
-    @IBAction func newlyButton1Clicked(_ sender: UIButton) {
-        appearTextLabel.text = "구독자 유뮤를 차별한다는 뜻"
-    }
-    
-    @IBAction func newlyButton2Clicked(_ sender: UIButton) {
-        appearTextLabel.text = "실시간 매니저를 줄인 말"
-    }
-    @IBAction func newlyButton3Clicked(_ sender: UIButton) {
-        appearTextLabel.text = "만나서 반가워 잘 부탁해! 의 줄임말"
-    }
-    @IBAction func newlyButton4Clicked(_ sender: UIButton) {
-        appearTextLabel.text = "꾸민듯 안꾸민듯의 줄임말"
-    }
+
     
     @IBAction func searchButton(_ sender: UIButton) {
         // 신조어 추가
@@ -119,6 +103,20 @@ class ViewController: UIViewController {
             appearTextLabel.text = "값 없음"
         }
     }
+   
+    
+    @IBAction func newButton(_ sender: UIButton) {
+        if sender == newlyButton1 {
+            appearTextLabel.text = "구독자 유뮤를 차별한다는 뜻"
+        } else if sender == newlyButton2 {
+            appearTextLabel.text = "실시간 매니저를 줄인 말"
+        } else if sender == newlyButton3 {
+            appearTextLabel.text = "만나서 반가워 잘 부탁해! 의 줄임말"
+        } else if sender == newlyButton4 {
+            appearTextLabel.text = "꾸민듯 안꾸민듯의 줄임말"
+        }
+    }
+    
     
     
 }
